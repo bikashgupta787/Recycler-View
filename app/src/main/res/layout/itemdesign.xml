@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="60dp">
+
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/msd">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/cardView"
+            android:text="MS DHONI"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="69dp"
+            android:layout_height="26dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="312dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="60dp"
+            android:layout_toRightOf="@id/textview1"
+            android:text="12:12AM"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="190dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/textview1"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="-2dp"
+            android:layout_toRightOf="@id/cardView"
+            android:text="I am captain cool"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/cardView"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/cardView"
+            android:text="-----------------------------------------------------------------------------------------------------"
+            android:textColor="#CDC7C7"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/del"
+            android:layout_width="91dp"
+            android:layout_height="58dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="303dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="0dp"
+            android:text="X" />
+    </RelativeLayout>
+
+</RelativeLayout>
